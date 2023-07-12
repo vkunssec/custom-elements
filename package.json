@@ -1,0 +1,18 @@
+{
+  "name": "customelementsts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-and-watch": "tsc -w",
+    "build": "tsc",
+    "server": "http-server -c-1 ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "http-server": "^14.1.1",
+    "typescript": "^5.1.6"
+  }
+}
