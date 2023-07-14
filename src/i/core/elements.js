@@ -84,9 +84,9 @@ export function getShadows() {
  * @param {string} url 
  * @returns 
  */
-export async function loadLinkApplication(url) {
+export async function loadLinkApplication(url, type = "stylesheet") {
     const link = document.createElement("link");
-    link.rel = "stylesheet";
+    link.rel = type;
     link.href = url;
     document.head.appendChild(link);
     return link;
