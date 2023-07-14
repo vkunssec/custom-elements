@@ -1,1 +1,1 @@
-export { AppElement } from "./elements/i-app/app.js";
+export { AppElement } from "./elements/i-app/main.js";
