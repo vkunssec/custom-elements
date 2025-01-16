@@ -1,1 +1,2 @@
-export { AppElement } from "./elements/i-app/main.js";
+export { ViewElement } from "./elements/i-view/main.js";
+export { AppBarElement } from "./elements/i-appbar/main.js";

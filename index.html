@@ -14,11 +14,15 @@
         }
     </style>
     
-    <script type="module" src="/src/i/api.js" inherit></script>
+    <script type="module" src="./src/i/api.js" inherit></script>
 </head>
 <body>
     
-    <i-app></i-app>
+    <i-view>
+        <i-appbar slot="appbar"></i-appbar>
+        <i-content slot="content"></i-content>
+        <i-none></i-none>
+    </i-view>
 
 </body>
 </html>

@@ -1,9 +1,9 @@
 import { DefaultShadowElement, loadCSSApplication, loadTemplateApplication } from "../../core/elements.js";
 
-
-export class AppElement extends DefaultShadowElement {
-    #template = "/src/i/elements/i-app/template.html";
-    #style = "/src/i/elements/i-app/style.css";
+/** */
+export class AppBarElement extends DefaultShadowElement {
+    #template = "./src/i/elements/i-appbar/template.html";
+    #style = "./src/i/elements/i-appbar/style.css";
 
     constructor() {
         super();
@@ -17,4 +17,4 @@ export class AppElement extends DefaultShadowElement {
     }
 }
 
-customElements.define("i-app", AppElement);
+customElements.define("i-appbar", AppBarElement);
