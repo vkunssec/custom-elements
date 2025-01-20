@@ -12,7 +12,7 @@ export class DefaultShadowElement extends HTMLElement {
     // Configuração padrão do shadow DOM
     protected static readonly defaultShadowConfig: ShadowConfig = {
         mode: 'closed',
-        delegatesFocus: true
+        // delegatesFocus: true
     };
 
     constructor() {
@@ -31,19 +31,19 @@ export class DefaultShadowElement extends HTMLElement {
     protected onInitialized(_shadow: ShadowRoot): void {}
 
     disconnectedCallback(): void {
-        console.log("element removed from page");
+        console.log("element removed from page", this.tagName);
     }
 
     adoptedCallback(): void {
-        console.log("element moved to new page");
+        console.log("element moved to new page", this.tagName);
     }
 
     attributeChangedCallback(name: string, oldValue: string | null, newValue: string | null): void {
-        console.log("element attributes changed");
+        console.log("element attributes changed", name, oldValue, newValue);
     }
 
     connectedCallback(): void {
-        console.log("element added to page");
+        console.log("element added to page", this.tagName);
     }
 
     async #build(element: HTMLElement): Promise<ShadowRoot> {
@@ -56,7 +56,7 @@ export class DefaultShadowElement extends HTMLElement {
         // Carregamento paralelo dos recursos
         await Promise.all([
             loadCSSApplication(element, undefined, true),
-            loadLinkApplication("./src/vk/core/assets/fonts/Montserrat/font.css")
+            loadLinkApplication("./src/vk/core/assets/fonts/Montserrat/font.css"),
         ]);
     }
 }
@@ -161,4 +161,4 @@ function debounce<T extends (...args: any[]) => void>(
         clearTimeout(timeoutId);
         timeoutId = setTimeout(() => fn(...args), delay);
     };
-} 
+}

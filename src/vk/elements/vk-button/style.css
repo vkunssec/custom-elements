@@ -1,0 +1,63 @@
+:host {
+    position: relative;
+    display: inline-block;
+    color: white;
+    background-color: var(--vk-highlight-color, #1A73E8);
+    padding: 10px 14px;
+    border-radius: 4px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .2);
+    overflow: hidden;
+    font-family: "Google Sans", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    outline: none;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+:host([highlight]) {
+    color: var(--vk-highlight-color, #1A73E8);
+}
+
+:host([discrete][outlined]) {
+    border: 1px solid var(--vk-border-color, #C4C4C4);
+    padding: 9px 13px;
+}
+
+:host>.vk-hover-background {
+    background-color: currentColor;
+    opacity: 0;
+    border-radius: inherit;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transition: opacity .15s;
+}
+
+:host(:hover)>.vk-hover-background {
+    opacity: .085;
+}
+
+:host>vk-icon {
+    display: none;
+    position: relative;
+    vertical-align: middle;
+    width: 21px;
+    height: 0;
+    font-size: 21px;
+    margin-right: 4px;
+    margin-left: -4px;
+    align-items: center;
+    top: -.1em;
+}
+
+:host-context(vk-drawer)>vk-icon {
+    margin-right: 26px;
+}
+
+:host([icon]:not([icon=""]))>vk-icon {
+    display: inline-flex;
+}

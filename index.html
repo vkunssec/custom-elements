@@ -20,8 +20,15 @@
     
     <vk-view>
         <vk-appbar slot="appbar"></vk-appbar>
-        <vk-content slot="content"></vk-content>
-        <vk-none></vk-none>
+        
+        <vk-button>
+            <span slot="icon">search</span>
+            <span slot="text">Search</span>
+        </vk-button>
+        <vk-button>
+            <vk-icon outlined slot="icon">delete</vk-icon>
+            <span slot="text">Delete</span>
+        </vk-button>
     </vk-view>
 
 </body>
