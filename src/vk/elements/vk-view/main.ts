@@ -1,4 +1,4 @@
-import { DefaultShadowElement, getShadow, loadCSSApplication, loadTemplateApplication } from "../../core/elements.js";
+import { DefaultShadowElement, loadCSSApplication, loadTemplateApplication } from "../../core/elements.js";
 
 /** */
 export class ViewElement extends DefaultShadowElement {

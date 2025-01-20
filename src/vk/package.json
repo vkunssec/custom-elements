@@ -1,0 +1,21 @@
+{
+    "name": "@vkunssec/elements",
+    "version": "1.0.0",
+    "type": "module",
+    "main": "./index.js",
+    "types": "./index.d.ts",
+    "exports": {
+        ".": {
+            "import": "./index.js",
+            "types": "./index.d.ts"
+        },
+        "./core": {
+            "import": "./core/elements.js",
+            "types": "./core/elements.d.ts"
+        },
+        "./elements/*": {
+            "import": "./elements/*/main.js",
+            "types": "./elements/*/main.d.ts"
+        }
+    }
+}

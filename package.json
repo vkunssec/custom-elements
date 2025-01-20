@@ -1,0 +1,26 @@
+{
+  "name": "custom-elements",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc && cp src/vk/package.json dist/vk/",
+    "watch": "tsc --watch",
+    "serve": "http-server . -p 3000 --cors -c-1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vkunssec/custom-elements.git"
+  },
+  "author": "vkunssec",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vkunssec/custom-elements/issues"
+  },
+  "homepage": "https://github.com/vkunssec/custom-elements#readme",
+  "description": "",
+  "devDependencies": {
+    "typescript": "^5.7.3",
+    "http-server": "^14.1.1"
+  }
+}
