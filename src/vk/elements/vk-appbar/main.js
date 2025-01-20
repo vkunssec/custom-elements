@@ -2,8 +2,8 @@ import { DefaultShadowElement, loadCSSApplication, loadTemplateApplication } fro
 
 /** */
 export class AppBarElement extends DefaultShadowElement {
-    #template = "./src/i/elements/i-appbar/template.html";
-    #style = "./src/i/elements/i-appbar/style.css";
+    #template = "./src/vk/elements/vk-appbar/template.html";
+    #style = "./src/vk/elements/vk-appbar/style.css";
 
     constructor() {
         super();
@@ -17,4 +17,4 @@ export class AppBarElement extends DefaultShadowElement {
     }
 }
 
-customElements.define("i-appbar", AppBarElement);
+customElements.define("vk-appbar", AppBarElement);

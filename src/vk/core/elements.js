@@ -52,7 +52,7 @@ export class DefaultShadowElement extends HTMLElement {
      */
     async #load(element) {
         await loadCSSApplication(element, undefined, true);
-        await loadLinkApplication("./src/i/core/assets/fonts/Montserrat/font.css");
+        await loadLinkApplication("./src/vk/core/assets/fonts/Montserrat/font.css");
     }
 }
 
@@ -143,7 +143,7 @@ async function loadCSS(url) {
     let css = undefined;
     // TODO: melhorar a importação do CSS Default ou retirar essa opção 
     if (!url) {
-        css = `@import url("./src/i/core/css/elements.css");`;
+        css = `@import url("./src/vk/core/css/elements.css");`;
     } else {
         css = await (await fetch(url, {
             method: "GET",

@@ -2,8 +2,8 @@ import { DefaultShadowElement, getShadow, loadCSSApplication, loadTemplateApplic
 
 /** */
 export class ViewElement extends DefaultShadowElement {
-    #template = "./src/i/elements/i-view/template.html";
-    #style = "./src/i/elements/i-view/style.css";
+    #template = "./src/vk/elements/vk-view/template.html";
+    #style = "./src/vk/elements/vk-view/style.css";
 
     constructor() {
         super();
@@ -17,4 +17,4 @@ export class ViewElement extends DefaultShadowElement {
     }
 }
 
-customElements.define("i-view", ViewElement);
+customElements.define("vk-view", ViewElement);
